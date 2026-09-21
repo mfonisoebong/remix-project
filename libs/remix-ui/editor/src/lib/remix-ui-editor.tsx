@@ -1995,7 +1995,10 @@ export const EditorUI = (props: EditorUIProps) => {
                 inlineSuggest: { enabled: true },
                 minimap: { enabled: false },
                 padding: { top: 16 },
-                lineNumbersMinChars: 4
+                lineNumbersMinChars: 4,
+                fontFamily: 'Agave, Consolas, monospace',
+                fontLigatures: true,
+                fontSize: 15,
               }}
               defaultValue={defaultEditorValue}
             />
@@ -2028,7 +2031,10 @@ export const EditorUI = (props: EditorUIProps) => {
                   glyphMargin: false,
                   readOnly: true,
                   inlineSuggest: { enabled: false },
-                  minimap: { enabled: false }
+                  minimap: { enabled: false },
+                    fontFamily: 'Agave, Consolas, monospace',
+                fontLigatures: true,
+                fontSize: 15,
                 }}
               />
             </div>
@@ -2051,7 +2057,10 @@ export const EditorUI = (props: EditorUIProps) => {
             inlineSuggest: { enabled: true },
             minimap: { enabled: false },
             padding: { top: 16 },
-            lineNumbersMinChars: 4
+            lineNumbersMinChars: 4,
+              fontFamily: 'Agave, Consolas, monospace',
+                fontLigatures: true,
+                fontSize: 15,
           }}
           defaultValue={defaultEditorValue}
           className={props.isDiff ? "d-none" : "d-block"}
